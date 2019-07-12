@@ -1,15 +1,19 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
+    buildToolsVersion "29.0.1"
 
 
     defaultConfig {
-        applicationId "com.ss.android.ugc.chapter1"
-        minSdkVersion 16
-        targetSdkVersion 28
+        applicationId "com.xzm.chapter2"
+        minSdkVersion 15
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
     }
 
     buildTypes {
@@ -24,6 +28,4 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
-    implementation 'com.android.support:appcompat-v7:28.0.0'
 }
